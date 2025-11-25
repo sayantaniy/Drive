@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FLOWBITE -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  </head>
+  <body class="bg-gray-200 dark:bg-gray-900 dark:text-white h-screen w-screen flex items-center justify-center">
+
+
+
+    <form action="/user/register" method="post">
+        <div class="grid gap-6 mb-6 w-96">
+            <div>
+                <label for="username" class="block mb-2.5 text-sm font-medium text-heading">User name</label>
+                <input 
+                type="text" 
+                id="username" 
+                name="username"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body dark:bg-gray-900" 
+                placeholder="John" 
+                required />
+
+            </div>
+            
+           
+        </div>
+        <div class="mb-6">
+            <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Email address</label>
+            <input type="email" 
+            id="email"
+            name="email"
+             class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body dark:bg-gray-900" 
+             placeholder="john.doe@company.com" required />
+        </div> 
+
+        <div class="mb-6">
+            <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Password</label>
+            <input type="password" 
+            id="password" 
+            name="password"
+            class="bg-neutral-secondary-medium rounded-xl border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body dark:bg-gray-900" placeholder="•••••••••" required />
+        </div> 
+       
+        <button 
+  type="submit"
+  class="px-6 py-3 rounded-xl font-semibold bg-blue-700
+         text-white shadow-md hover:shadow-lg 
+         transition-all duration-300 
+         hover:-translate-y-0.5 
+         focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-700 ">
+  Submit
+</button>
+  </form>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+  </body>
+</html>
