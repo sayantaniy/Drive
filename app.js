@@ -15,7 +15,7 @@ app.set('view engine', 'ejs')
 app.use(cookieParser());
 
 app.use(express.json());
-app.use(express.urlencoded({extrended:true}));
+app.use(express.urlencoded({extended:true}));
 
 app.use('/',indexRouter);
 app.use('/user',userRouter);
